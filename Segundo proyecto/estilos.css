@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.contenedor_header{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    height: 600px;
+    background-image: url(fondo_header.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+header nav ul{
+    float: right;
+    margin-top: 40px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 40px;
+    border-radius: 30px; 
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    background-color: rgba(234, 201, 187, 0.60);
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
+.contenedor_logo {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_logo .logo {
+    border: 2px solid white;
+    padding: 31px 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor_logo .logo h1 {
+    font-size: 48px;
+}
+
+.contenedor_logo .logo h2 {
+    font-size: 32px;
+}
+
+.contenedor_logo .descargar_cv{
+    width: 230px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    background-color: rgba(234, 201, 187, 0.60);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.contenedor_logo .descargar_cv:hover {
+    opacity: 0.8;
+}
+
+.contenedor_logo .descargar_cv a  {
+    margin-left: 5px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.contenedor_logo .descargar_cv a:active {
+    text-decoration: none;
+}
+
+.fa-circle-down:before {
+    font-size: 20px;
+}
+
+/* Sobre Mi */
+
+.contenedor_sobre_mi {
+    width: 90%;
+    max-width: 1300px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contenedor_sobre_mi .div_imagen img {
+    height: 350px;
+}
+
+.contenedor_sobre_mi .div_contenido {
+    padding: 20px 40px;
+}
+
+.contenedor_sobre_mi .div_contenido h2{
+    font-size: 32px;
+    color: #5B8F8F;
+}
+
+.contenedor_sobre_mi .div_contenido p{
+    font-size: 24px;
+    margin: 15px 0px;
+}
+
+.contenedor_sobre_mi .div_contenido ul{
+    font-size: 24px;
+    margin: 15px 0px;
+}
+
+.contenedor_sobre_mi .div_contenido ul li{
+    list-style: none;
+}
+
+/* Mi Curriculum Vitae */
+
+.contenedor_mi_cv {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.div_titulo h2{
+    margin: 0px auto;
+    color: #5B8F8F;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contenedor_cajas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_cajas .div_caja{
+    width: 30%;
+    background-color: rgba(234, 201, 187, 0.60);
+    border: 4px solid #5B8F8F;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.contenedor_cajas .div_caja h3{
+    font-size: 30px;
+    text-align: center;
+    color: #5B8F8F;
+    margin-bottom: 20px;
+}
+
+.contenedor_cajas li {
+    list-style: none;
+    font-size: 24px ;
+}
+
+/* Formulario */
+
+.contenedor_contacto {
+    width: 90%;
+    max-width: 1300px;
+    margin: 60px auto;
+    display: flex; 
+    flex-direction: column;  
+}
+
+.div_nombre_correo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_nombre_correo input[type="text"],
+.div_nombre_correo input[type="email"]{
+    width: 49%;
+    padding: 15px;
+    border: 2px solid #CECECE;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.div_mensaje textarea {
+    border-radius: 5px;
+    border: 2px solid #CECECE;
+    padding: 15px;
+    font-size: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/*
+.div_nombre_correo input[type="text"]:focus,
+.div_nombre_correo input[type="email"]:focus,
+.div_mensaje textarea:focus{
+    border: 0px;
+}
+*/
+
+.div_submit{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.div_submit input[type="submit"]{
+    width: 230px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #5B8F8F;
+    border: 0px solid #5B8F8F;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.div_submit input[type="submit"]:hover{
+    opacity: 0.9;
+}
+
+/* Footer */
+
+footer {
+    height: 200px;
+    background-color: rgba(234, 201, 187, 0.80);
+    display: flex;
+}
+
+.contenedor_footer{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor_footer a{
+    text-decoration: none;
+}
+
+.contenedor_footer .div_redes_sociales {
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div_redes_sociales:hover {
+    opacity: 0.8;
+}
+
+footer .div_redes_sociales.whatsapp {
+    background-color: #25d366;
+}
+
+footer .div_redes_sociales.twitter {
+    background-color: #1da1f2;
+}
+
+footer .div_redes_sociales.facebook {
+    background-color: #3B5998;
+}
+
+.div_redes_sociales i{
+    color: white;
+    font-size: 30px;
+}
+
+/* MediaQueris */
+
+@media screen and (max-width:1050px){
+    .contenedor_cajas{
+        flex-direction: column;
+        align-items: center;
+    }.contenedor_cajas .div_caja {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width:700px){
+    header nav{
+        display: none;
+    } .contenedor_sobre_mi {
+        flex-direction: column;
+    } .contenedor_sobre_mi .div_contenido{
+        padding: 0px;
+        margin-top: 20px;
+    } .contenedor_sobre_mi .div_contenido h2{
+        text-align:center;
+    }.contenedor_cajas .div_caja {
+    width: 100%;
+    margin: 20px auto;
+}
+}
